@@ -1,0 +1,31 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #070d12;
+  color: #c8dde8;
+  font-family: 'IBM Plex Sans', 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: #070d12; }
+::-webkit-scrollbar-thumb { background: #1a2e3f; border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: #1e4060; }
+
+/* Selection */
+::selection { background: rgba(0, 212, 255, 0.25); }
+
+/* Remove default button styles */
+button { font-family: inherit; }
+input, select, textarea { font-family: inherit; }
